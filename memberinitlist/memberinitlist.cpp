@@ -6,8 +6,26 @@
 using namespace std;
 
 class mahasiswa {
+private:
+	const int id;
+	string nama;
+	float nilai;
 
+public:
+	mahasiswa(int pId, string pNama, float pNilai) :id(pId), nama(pNama), nilai(pNilai) { //Member Initialization List
+		//Definisi
+	}
+
+	~mahasiswa() {
+		cout << "Id    = " << id << endl;
+		cout << "Nama  = " << nama << endl;
+		cout << "Nilai = " << nilai << endl;
+	}
 };
+
+int main() {
+
+}
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
