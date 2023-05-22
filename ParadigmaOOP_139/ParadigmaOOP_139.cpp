@@ -26,8 +26,22 @@ class pelajar : public orang {
 public:
 	string sekolah;
 
-
+	pelajar(string pNama, string pSekolah) :
+		orang(pNama),
+		sekolah(pSekolah) {
+		cout << "pelajar dibuat\n" << endl;
+	}
+	~pelajar() {
+		cout << "pelajar dihapus\n" << endl;
+	}
+	string perkenalan() {
+		return "Hallo, nama saya " + nama + " dari sekolah " + sekolah + "\n\n";
+	}
 };
+
+int main() {
+
+}
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
