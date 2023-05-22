@@ -2,11 +2,14 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+#include "jantung.h"
+#include "manusia.h"
+
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
