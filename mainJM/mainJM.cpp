@@ -8,7 +8,9 @@ using namespace std;
 #include "jantung.h"
 #include "manusia.h"
 
+int main() {
 
+}
 
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
