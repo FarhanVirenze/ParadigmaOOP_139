@@ -20,7 +20,25 @@ public:
 	void cetakDokter();
 };
 
+class dokter {
+public:
+	string nama;
+	vector<pasien*> daftar_pasien;
 
+	dokter(string pNama) :nama(pNama) {
+		cout << "Dokter \"" << nama << "\" ada\n";
+	}
+	~dokter() {
+		cout << "Dokter \"" << nama << "\" tidak ada\n";
+	}
+	~dokter() {
+		cout << "Dokter \"" << nama << "\" tidak ada\n";
+	}
+
+	void tambahPasien(pasien*);
+
+
+};
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
