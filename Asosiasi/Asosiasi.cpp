@@ -31,15 +31,36 @@ public:
 	~dokter() {
 		cout << "Dokter \"" << nama << "\" tidak ada\n";
 	}
-	~dokter() {
-		cout << "Dokter \"" << nama << "\" tidak ada\n";
-	}
 
 	void tambahPasien(pasien*);
 	void cetakPasien();
 };
 
+void pasien::tambahDokter(dokter* pDokter) {
+	daftar_dokter.push_back(pDokter);
+}
+void pasien::cetakDokter() {
+	cout << "Daftar Dokter yang menangani pasien \"" << this->nama << "\":\n";
+	for (auto& a : daftar_dokter) {
+		cout << a->nama << "\n";
+	}
+	cout << endl;
+}
+void dokter::tambahPasien(pasien* pPasien) {
+	daftar_pasien.push_back(pPasien);
+	pPasien->tambahDokter(this);
+}
+void dokter::cetakPasien() {
+	cout << "Daftar Pasien dari Dokter \"" << this->nama << "\":\n";
+	for (auto& a : daftar_pasien) {
+		cout << a->nama << "\n";
+	}
+	cout << endl;
+}
 
+int main() {
+	
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
