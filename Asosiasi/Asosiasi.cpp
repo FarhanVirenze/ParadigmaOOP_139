@@ -17,7 +17,9 @@ public:
 		cout << "Pasien \"" << nama << "\" tidak ada\n";
 	}
 	void tambahDokter(dokter*);
+	void cetakDokter();
 };
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
